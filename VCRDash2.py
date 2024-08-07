@@ -92,8 +92,8 @@ col1000, col2000, col3000 = st.columns([1,82,1], gap="Small")
 
 clist_a = df['TimeonBooks'].unique().tolist()
 #clist_test = df['Vintage'].unique().tolist()
-clist_test = df['Vintage'].unique().tolist()
-clist = clist_test[-18:]
+clist = df['Vintage'].unique().tolist()
+#clist = clist_test[-18:]
 # clist_1 = df['AccountNumber'].unique().tolist()
 # clist1 = clist_1.insert(0, 'All')
 @st.experimental_fragment()
