@@ -92,7 +92,7 @@ st.markdown(css, unsafe_allow_html=True)
 
 #reading in base table
 # df is used for filtering, gdf is a copy for when filters are chosen     
-df=pd.read_parquet(r"C:\Users\cmacedo\Data\datedDf2.parquet")
+df=pd.read_parquet(r"SampleTest_Dates.parquet")
 
 
 
