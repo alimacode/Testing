@@ -72,24 +72,6 @@ css='''
 st.markdown(css, unsafe_allow_html=True)
 
 
-# df=pd.read_csv(r"\\fnbmcorp\share\Risk\Enterprise Risk\PortfolioManagement\VintageComparisonGraphs\Data\columns.csv")
-# df.to_parquet(r"\\fnbmcorp\share\Risk\Enterprise Risk\PortfolioManagement\VintageComparisonGraphs\Data\columns.parquet")
-# df=pd.read_parquet(r"C:\Users\amalik\ProjectDash\Data\DASHBASE36MOB.parquet")
-# df=pd.read_parquet(r"C:\Users\cmacedo\Data\vcr_base_24.parquet")
-
-# df=pd.read_parquet(r"C:\Users\cmacedo\Data\dashbase.parquet")
-
-
-#doing this in another file, but it recreates the basetable with year and month columns added from reporting dates. 
-# preDateddf=pd.read_parquet(r"C:\Users\cmacedo\Data\test.parquet")
-
-# preDateddf['DDMONTHYEAR'] = pd.to_datetime(preDateddf['ReportingDate'], format='%d%b%Y')
-# # Separating the date into 'ReportingDate', 'Month', and 'Year' columns
-# preDateddf['Month'] = preDateddf['DDMONTHYEAR'].dt.month
-# preDateddf['Year'] = preDateddf['DDMONTHYEAR'].dt.year
-
-# preDateddf.to_parquet(r"C:\Users\cmacedo\Data\datedDf2.parquet")
-
 #reading in base table
 # df is used for filtering, gdf is a copy for when filters are chosen     
 df=pd.read_parquet(r"SampleTest_Dates.parquet")
