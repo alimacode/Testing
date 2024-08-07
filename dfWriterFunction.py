@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 import calendar
-df=pd.read_parquet(r"C:\Users\cmacedo\adhoc\SampleTest_Dates.parquet")
+df=pd.read_parquet(r"SampleTest_Dates.parquet")
 
 
 
