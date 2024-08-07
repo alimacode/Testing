@@ -13,20 +13,9 @@ from pandas.tseries.offsets import DateOffset
 from typing import List
 from dateutil.parser import parse
 
-#doing this in another file, but it recreates the basetable with year and month columns added from reporting dates. 
-# preDateddf=pd.read_parquet(r"C:\Users\amalik\ProjectDash\Data\DASHBASE36MOB.parquet")
-
-
-# preDateddf['DDMONTHYEAR'] = pd.to_datetime(preDateddf['ReportingDate'], format='%d%b%Y')
-# # Separating the date into 'ReportingDate', 'Month', and 'Year' columns
-# preDateddf['Month'] = preDateddf['DDMONTHYEAR'].dt.month
-# preDateddf['Year'] = preDateddf['DDMONTHYEAR'].dt.year
-
-# preDateddf.to_parquet('datedDf.parquet')
-
 #reading in base table
 # df is used for filtering, gdf is a copy for when filters are chosen     
-df=pd.read_parquet(r"C:\Users\cmacedo\adhoc\SampleTest_Dates.parquet")
+df=pd.read_parquet(r"SampleTest_Dates.parquet")
 
 
 #Replace any NaN values with a string "None"
