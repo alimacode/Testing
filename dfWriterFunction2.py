@@ -5,7 +5,7 @@ from collections import deque
 
 # df=pd.read_parquet(r"C:\Users\cmacedo\Data\vcr_base_24.parquet")
 # df=pd.read_parquet(r"C:\Users\cmacedo\Data\test.parquet")
-df=pd.read_parquet(r"C:\Users\cmacedo\Data\datedDf2.parquet")
+df=pd.read_parquet(r"SampleTest.parquet")
 
 def filter_dataframe(df, sel_group = ' ', sel_vin = ' ', sel_fs = ' ', sel_brand = ' ', sel_pg = ' ', sel_assc = ' ', 
             sel_mob = ' ', sel_channel = ' ', sel_source = ' ', sel_sub = ' ', 
