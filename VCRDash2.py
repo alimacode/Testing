@@ -74,7 +74,7 @@ st.markdown(css, unsafe_allow_html=True)
 
 #reading in base table
 # df is used for filtering, gdf is a copy for when filters are chosen     
-df=pd.read_parquet(r"SampleTest_Dates.parquet")
+df=pd.read_parquet(r"SampleTest_Dates2.parquet")
 
 
 
@@ -91,6 +91,7 @@ col1000, col2000, col3000 = st.columns([1,82,1], gap="Small")
 #Unique list for Vintage
 
 clist_a = df['TimeonBooks'].unique().tolist()
+#clist_test = df['Vintage'].unique().tolist()
 clist_test = df['Vintage'].unique().tolist()
 clist = clist_test[-18:]
 # clist_1 = df['AccountNumber'].unique().tolist()
@@ -553,7 +554,7 @@ with col2000:
             if clear:
                 st.session_state.selected_vintages_list.clear()
                 st.session_state['add_counter'] = 1
-                df_clear = df.loc[(df['Vintage'] == None)
+                df_clear = df.loc[(df['ReportingDate'] == None)
                                         & (df['AccountNumber'] == None)
                                         & (df['Branding'] == None)
                                         & (df['RetainedBusiness'] == None)
