@@ -1,4 +1,4 @@
-Give a presentation that walks the audience through this code: import streamlit as st
+import streamlit as st
 import pandas as pd
 from datetime import datetime
 import plotly.express as px
